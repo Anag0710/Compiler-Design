@@ -1,31 +1,64 @@
-# Exp4_1.c - Character Frequency Counter
+# Compiler Design Experiments
 
-This C program counts the number of times a specified character appears in a text file.
+This repository contains C programs for various experiments related to compiler design, including file handling, keyword and operator counting, and text analysis.
 
-## How It Works
-- The program prompts the user to enter a character to search for.
-- It opens the file `Test.c` for reading.
-- It counts how many times the specified character appears in the file.
-- The result is displayed to the user.
+## Directory Structure
 
-## Usage
-1. Make sure you have a file named `Test.c` in the same directory as the program.
-2. Compile the program using GCC:
-   ```sh
-   gcc Exp4_1.c -o Exp4_1.exe
-   ```
-3. Run the program:
-   ```sh
-   ./Exp4_1.exe
-   ```
-4. Enter the character you want to search for when prompted.
+```
+.vscode/
+    settings.json
+Experiment 1/
+    Exp1_1.c
+    EXP1_2.c
+    File Handling.c
+Experiment 2/
+    Keyword Counter.c
+Experiment 3/
+    Exp3_1.c
+    Exp3_2.c
+Experiment 4/
+    a.exe
+    Exp4_1.c
+    Exp4_1.exe
+    Exp4_2.c
+    Test.txt
+```
+
+## Experiments
+
+### Experiment 1
+- **Exp1_1.c** / **EXP1_2.c**: Identify whether a given string is a C keyword.
+- **File Handling.c**: Write data to a file (`Test.txt`).
+
+### Experiment 2
+- **Keyword Counter.c**: Count the total number of C keywords in a file (`Test.txt`).
+
+### Experiment 3
+- **Exp3_1.c** / **Exp3_2.c**: Count the number of operators in a file (`Test.txt`).
+
+### Experiment 4
+- **Exp4_1.c**: Count occurrences of a specific character in a file (`Test.txt`).
+- **Exp4_2.c**: Count total characters, words, and lines in a file (`Test.txt`).
+
+## How to Run
+
+1. Open the desired `.c` file in your C compiler or IDE.
+2. Make sure `Test.txt` is present in the same directory as the executable or source file if required.
+3. Compile the program:
+    ```sh
+    gcc filename.c -o outputname
+    ```
+4. Run the executable:
+    ```sh
+    ./outputname
+    ```
 
 ## Notes
-- If `Test.c` does not exist, the program will display an error message.
-- The search is case-sensitive.
 
-## Example Output
-```
-Enter the character to find: a
-The character 'a' appears 5 times
-```
+- All file operations use `Test.txt` located in `Experiment 4/`.
+- Update the file path in the code if your setup differs.
+- The `.vscode/settings.json` file contains editor settings for Visual Studio Code.
+
+## License
+
+This project is for educational purposes.
