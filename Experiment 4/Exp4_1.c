@@ -1,3 +1,4 @@
+// Write a Program in C to count occurrences of a character in a file.
 #include<stdio.h>
 int main()
 {
